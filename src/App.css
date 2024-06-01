@@ -7,6 +7,10 @@ body {
   margin: 0;
 }
 
+.grey {
+  color: #918e9b;
+}
+
 nav {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -41,4 +45,43 @@ nav {
   line-height: 110%;
   margin-top: 0;
   max-width: 320px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  padding-top: 10px;
+}
+
+.card--badge {
+  background-color: #ffffff;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 5px;
+  padding: 3px 6px 3px 6px;
+  position: absolute;
+}
+
+.card--img {
+  border-radius: 9px;
+  margin-bottom: 9px;
+
+  width: 176px;
+}
+
+.card--star {
+  width: 14px;
+}
+
+.card--status {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--status > * {
+  font-size: 12px;
+  font-weight: 300;
+  padding-bottom: 5px;
 }
