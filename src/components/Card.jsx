@@ -12,7 +12,7 @@ function Card({ coverImg, stats, location, title, price, openSpots }) {
       {badgeText && <span className="card--badge">{badgeText}</span>}
       <img
         className="card--img"
-        src={`src/assets/${coverImg}`}
+        src={`../assets/${coverImg}`}
         alt="card image"
       />
 
