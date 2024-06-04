@@ -49,19 +49,24 @@ nav {
 
 .card {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   padding: 20px;
   padding-top: 10px;
+  position: relative;
 }
 
 .card--badge {
   background-color: #ffffff;
   border-radius: 2px;
-  font-size: 10px;
+  font-size: 0.625rem;
   font-weight: 400;
   margin: 5px;
+  max-width: fit-content;
   padding: 3px 6px 3px 6px;
+  /* margin-bottom: -28px; */
   position: absolute;
+  z-index: 1;
 }
 
 .card--img {
@@ -81,7 +86,16 @@ nav {
 }
 
 .card--status > * {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 300;
-  padding-bottom: 5px;
+  margin: 0;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.card--list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0;
+  overflow-x: scroll;
 }
