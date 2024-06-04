@@ -10,11 +10,7 @@ function Card({ coverImg, stats, location, title, price, openSpots }) {
   return (
     <div className="card">
       {badgeText && <span className="card--badge">{badgeText}</span>}
-      <img
-        className="card--img"
-        src={`../assets/${coverImg}`}
-        alt="card image"
-      />
+      <img className="card--img" src={coverImg} alt="card image" />
 
       <div className="card--status">
         <div className="card--rating">
